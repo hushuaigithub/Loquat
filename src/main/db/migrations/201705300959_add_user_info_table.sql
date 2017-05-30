@@ -1,0 +1,20 @@
+create table user_info
+(user_id UUID not null,
+one_word_introduction VARCHAR(500),
+hobbies VARCHAR(500),
+dream VARCHAR(500),
+city VARCHAR(50),
+company VARCHAR(100),
+has_house boolean,
+userName VARCHAR(30),
+idCard VARCHAR(30),
+education VARCHAR(50),
+school VARCHAR(100),
+fond_musics VARCHAR(500),
+fond_books VARCHAR(500),
+fond_cities VARCHAR(500),
+fond_exercises VARCHAR(500),
+fond_pets VARCHAR(500),
+trust_value int not null default 0,
+constraint user_info_user_id_pk primary key(user_id)
+);
