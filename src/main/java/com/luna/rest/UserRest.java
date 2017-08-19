@@ -47,6 +47,7 @@ public class UserRest {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response getUser() {
+        LOGGER.info("UserRest.getUser");
         List<User> list = userService.getUserList();
         return Response.ok(list).build();
     }
